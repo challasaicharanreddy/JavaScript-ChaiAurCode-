@@ -40,6 +40,32 @@ console.log(typeof heros);//object
 console.log(typeof myFunction);//object function, basically a function
 
 
-
-
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+//---------------------**************--------------------
+// Memory
+// Stack(Primitive) & Heap(Non_Primitive)
+
+let nameone="Sai Charan"
+let nametwo=nameone;
+nametwo="Charan";
+
+console.log(nameone);
+console.log(nametwo);
+//The output is different as the nameone is to copied to nametwo
+
+let userone={
+    email: "user@gmail.com",
+}
+let usertwo=userone;
+
+usertwo.email="charan@gmail.com";
+
+console.log(userone);
+console.log(usertwo);
+//The output is same as the userone and usertwo refer to the same memory in the heap.
+
+
+
+
